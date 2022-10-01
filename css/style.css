@@ -82,13 +82,13 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
-  src: local("Rubik"), url("/fonts/rubik/rubik-400.woff2") format("woff2");
+  src: local("Rubik"), url("../fonts/rubik/rubik-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
-  src: local("Rubik"), url("/fonts/rubik/rubik-700.woff2") format("woff2");
+  src: local("Rubik"), url("../fonts/rubik/rubik-700.woff2") format("woff2");
 }
 @font-face {
   font-family: "Raleway";
@@ -306,16 +306,16 @@ main {
 }
 
 .menu-top__login button {
-  background-image: url("/img/svg/icons.svg");
+  background-image: url("../img/svg/icons.svg");
 }
 
 .menu-top__compare button {
-  background-image: url("/img/svg/compare.svg");
+  background-image: url("../img/svg/compare.svg");
 }
 
 .menu-top__cart button {
   position: relative;
-  background-image: url("/img/svg/cart.svg");
+  background-image: url("../img/svg/cart.svg");
   z-index: 5;
   margin: 35px 0;
 }
