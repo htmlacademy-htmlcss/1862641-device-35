@@ -187,6 +187,18 @@ h1, h2, h3, h4, h5, h6 {
   height: 8px;
   z-index: -1;
 }
+.link-button:hover::after {
+  height: 40px;
+  top: -30%;
+}
+.link-button:active::after {
+  height: 40px;
+  top: -30%;
+  background: #ffcc33;
+}
+.link-button:focus::after {
+  background: #ffcc33;
+}
 
 .body {
   display: flex;
@@ -575,7 +587,7 @@ main {
   content: "";
   position: absolute;
   width: 100%;
-  top: 105px;
+  top: 98px;
   left: 0;
   right: 0;
   bottom: 0;
@@ -588,18 +600,62 @@ main {
   justify-content: space-between;
 }
 
-.offer__buttons {
+.offer__link-buttons {
   display: flex;
   flex-direction: column;
   padding-top: 64px;
-  padding-right: 60px;
 }
 
-.offer__button {
-  width: 160px;
+.offer__item {
+  width: 220px;
+  position: relative;
 }
 
-.offer__button:not(:last-child) {
+.offer__link-button {
+  width: 150px;
+  padding: 0 20px;
+}
+
+.offer__link-button:hover {
+  transition: 0.7s;
+  color: #FFE17F;
+}
+.offer__link-button:hover::after {
+  content: "";
+  position: absolute;
+  text-align: center;
+  width: 220px;
+  min-height: 40px;
+  background-color: black;
+  top: -30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.offer__link-button-active {
+  color: #FFE17F;
+}
+.offer__link-button-active::after {
+  content: "";
+  position: absolute;
+  text-align: center;
+  width: 220px;
+  min-height: 40px;
+  background-color: black;
+  top: -30%;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 8px;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+.offer__item:not(:last-child) {
   margin-bottom: 47px;
 }
 
