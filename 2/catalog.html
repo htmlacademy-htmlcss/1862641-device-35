@@ -82,7 +82,7 @@
 
                     <div class="header__menu-top menu-top">
 
-                        <form action="" class="menu-top__wrapper search">
+                        <form action="https://echo.htmlacademy.ru/" class="menu-top__wrapper search">
                             <div class="search__input">
                                 <label >
                                     <input type="search" class="search__input-search" placeholder="Поиск по сайту">
@@ -90,7 +90,7 @@
                             </div>
 
                             <div class="search__button">
-                                 <button class="button__default" >Найти</button>
+                                 <button class="button__default " type="submit">Найти</button>
                             </div>
 
                         </form>
@@ -171,9 +171,9 @@
             <div class="breadcrumds__body">
                 <div class="breadcrumds__contaiter container">
                     <div class="breadcrumds__content">
-                        <h2 class="breadcrumds__title title">
+                        <h1 class="breadcrumds__title title">
                             Моноподы для селфи
-                        </h2>
+                        </h1>
 
                         <ul class="breadcrumds__list">
 
@@ -202,14 +202,17 @@
        </section>
 
        <section class="product-card">
+            <h2 class="visually-hidden">
+                Карточка товара
+            </h2>
             <div class="product-card__body">
                 <div class="product-card__container container">
                     <div class="product-card__content">
                         <div class="product-card__form ">
-                            <h5 class="product-card__h5 h5">
+                            <h3 class="product-card__subtitle subtitle">
                                 Фильтр
-                            </h5>
-                            <form action="" method="get" class="form-card">
+                            </h3>
+                            <form action="https://echo.htmlacademy.ru/" method="get" class="form-card">
                                 <fieldset>
 
                                     <legend class="form-card__legend">Cтоимость</legend>
@@ -225,14 +228,14 @@
                                     <legend class="form-card__legend">Цвет</legend>
 
                                     <label class="form-card__label">
-                                        <input type="checkbox" class="visually-hidden form-card__checkbox" checked name="color">
+                                        <input type="checkbox" class="visually-hidden form-card__checkbox" checked name="color-black">
                                         <span class="checkbox__fake"></span>
 
                                         Черный
                                     </label>
 
                                     <label class="form-card__label">
-                                        <input type="checkbox" class="visually-hidden form-card__checkbox" checked name="color">
+                                        <input type="checkbox" class="visually-hidden form-card__checkbox" checked name="color-white">
                                         <span class="checkbox__fake"></span>
 
                                         Белый
@@ -240,7 +243,7 @@
                                     </label>
 
                                     <label class="form-card__label">
-                                        <input type="checkbox" class="visually-hidden form-card__checkbox" name="color">
+                                        <input type="checkbox" class="visually-hidden form-card__checkbox" name="color-blue">
                                         <span class="checkbox__fake"></span>
 
 
@@ -248,7 +251,7 @@
                                     </label>
 
                                     <label class="form-card__label">
-                                        <input type="checkbox" class="visually-hidden form-card__checkbox" name="color">
+                                        <input type="checkbox" class="visually-hidden form-card__checkbox" name="color-red">
                                         <span class="checkbox__fake"></span>
 
 
@@ -256,7 +259,7 @@
                                     </label>
 
                                     <label class="form-card__label">
-                                        <input type="checkbox" class="visually-hidden form-card__checkbox" name="color">
+                                        <input type="checkbox" class="visually-hidden form-card__checkbox" name="color-pink">
                                         <span class="checkbox__fake"></span>
 
 
@@ -270,7 +273,7 @@
                                     <legend class="form-card__legend"> BlueTooth</legend>
 
                                     <label class="form-card__label">
-                                        <input type="radio" class="visually-hidden form-card__radio" name="bluetooth" checked>
+                                        <input type="radio" class="visually-hidden form-card__radio" value="yes" name="bluetooth" checked>
                                         <span class="radio__fake"></span>
 
 
@@ -278,40 +281,38 @@
                                     </label>
 
                                     <label class="form-card__label">
-                                        <input type="radio" class="visually-hidden form-card__radio" name="bluetooth">
+                                        <input type="radio" class="visually-hidden form-card__radio" value="no" name="bluetooth">
                                         <span class="radio__fake"></span>
 
 
                                         Нет
                                     </label>
 
-
-
                                 </fieldset>
 
-                                <button class="producnt-card__button link-button">Показать</button>
+                                <button class="producnt-card__button link link-button" type="submit">Показать</button>
 
                             </form>
                         </div>
 
                         <div class="product-card__goods">
                             <div class="product-card__sort sort">
-                                <h5 class="product-card__h5 h5 sort__h5">
+                                <h3 class="product-card__subtitle subtitle">
                                     Сортировка
-                                </h5>
+                                </h3>
 
                                 <a href="#" class="sort__link text">
                                     Популярные
                                 </a>
 
                                 <div class="sort__buttons">
-                                    <button class="sort__button">
+                                    <button class="sort__button" type="button">
                                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M6 0L11.5 10H0.5" fill="black"/>
                                         </svg>
                                     </button>
 
-                                    <button class="sort__button">
+                                    <button class="sort__button" type="button">
                                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/>
                                         </svg>
@@ -328,70 +329,99 @@
                                 <ul class="product-card__list">
 
                                     <li class="product-card__item">
-                                        <img src="img/jpeg/product_1.jpg" alt="Любительская
-                                        селфи-палка">
-                                        <div class="product-card__name">
-                                            <b class="product-card__bold bold">
-                                                Любительская <br>
-                                                селфи-палка
-                                            </b>
+                                        <a href="#">
+                                            <img src="img/jpeg/product_1.jpg" alt="Любительская
+                                            селфи-палка">
 
-                                            <p class="product-card__price">
-                                                500 <span>&#x20bd;</span>
-                                            </p>
+                                            <div class="product-card__name">
+                                                <p class="product-card__bold text-bold">
+                                                    Любительская <br>
+                                                    селфи-палка
+                                                </p>
+
+                                                <p class="product-card__price">
+                                                    500 <span>&#x20bd;</span>
+                                                </p>
+                                            </div>
+
+
+                                        </a>
+
+                                        <div class="product-card__hover">
+                                            <a href="#" class="product-card__link link link-button">Подробнее</a>
                                         </div>
                                     </li>
 
                                     <li class="product-card__item">
-                                        <img src="img/jpeg/product_2.jpg" alt="Профессиональная >
-                                        селфи-палка ">
-                                        <div class="product-card__name">
-                                            <b class="product-card__bold bold">
-                                                Профессиональная <br>
-                                                селфи-палка
-                                            </b>
+                                        <a href="#">
+                                            <img src="img/jpeg/product_2.jpg" alt="Профессиональная
+                                            селфи-палка ">
 
-                                            <p class="product-card__price">
-                                               1 500 <span>&#x20bd;</span>
-                                            </p>
+                                            <div class="product-card__name">
+                                                <p class="product-card__bold text-bold">
+                                                        Профессиональная <br>
+                                                        селфи-палка
+                                                </p>
+
+                                                <p class="product-card__price">
+                                                1 500 <span>&#x20bd;</span>
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <div class="product-card__hover">
+                                            <a href="#" class="product-card__link link link-button">Подробнее</a>
                                         </div>
                                     </li>
 
                                     <li class="product-card__item">
-                                        <img src="img/jpeg/product_3.jpg" alt="Непотопляемая
-                                        селфи-палка">
-                                        <div class="product-card__name">
-                                            <b class="product-card__bold bold">
-                                                Непотопляемая <br>
-                                                селфи-палка
-                                            </b>
+                                        <a href="#">
+                                            <img src="img/jpeg/product_3.jpg" alt="Непотопляемая
+                                            селфи-палка">
 
-                                            <p class="product-card__price">
-                                               2 500 <span>&#x20bd;</span>
-                                            </p>
+                                            <div class="product-card__name">
+                                                <p class="product-card__bold text-bold">
+                                                    Непотопляемая <br>
+                                                    селфи-палка
+                                                </p>
+
+                                                <p class="product-card__price">
+                                                2 500 <span>&#x20bd;</span>
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <div class="product-card__hover">
+                                            <a href="#" class="product-card__link link link-button">Подробнее</a>
                                         </div>
                                     </li>
 
                                     <li class="product-card__item">
-                                        <img src="img/jpeg/product_4.jpg" alt="Селфи-палка «Следуй
-                                        за мной»">
-                                        <div class="product-card__name">
-                                            <b class="product-card__bold bold">
-                                                Селфи-палка «Следуй <br>
-                                                 за мной»
-                                            </b>
+                                        <a href="#">
+                                            <img src="img/jpeg/product_4.jpg" alt="Селфи-палка «Следуй
+                                             за мной»">
+                                            <div class="product-card__name">
+                                                <p class="product-card__bold text-bold">
+                                                        Селфи-палка «Следуй <br>
+                                                        за мной»
+                                                </p>
 
-                                            <p class="product-card__price">
-                                               1 500 <span>&#x20bd;</span>
-                                            </p>
+                                                <p class="product-card__price">
+                                                1 500 <span>&#x20bd;</span>
+                                                </p>
+                                            </div>
+                                        </a>
+
+                                        <div class="product-card__hover">
+                                            <a href="#" class="product-card__link link link-button">Подробнее</a>
                                         </div>
                                     </li>
                                 </ul>
 
-                                <button class="product-card__button">Загрузить еще</button>
+                                <button class="product-card__button" type="button">Загрузить еще</button>
 
                                 <div class="product-card__pagination pagination">
-                                    <button class="pagination__button  ">Назад</button>
+                                    <button class="pagination__button " type="button">Назад</button>
 
                                     <ul class="pagination__list">
                                         <li class="pagination__item">
@@ -412,7 +442,7 @@
 
                                     </ul>
 
-                                    <button class="pagination__button">Вперёд</button>
+                                    <button class="pagination__button" type="button">Вперёд</button>
 
                                 </div>
                             </div>
