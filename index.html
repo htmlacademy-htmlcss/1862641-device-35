@@ -80,7 +80,7 @@
                     </figure>
                     <div class="header__menu-top menu-top">
                             
-                        <form action="" class="menu-top__wrapper search">
+                        <form action="https://echo.htmlacademy.ru/" class="menu-top__wrapper search">
                             <div class="search__input">
                                 <label >
                                     <input type="search" class="search__input-search" placeholder="Поиск по сайту">
@@ -88,7 +88,7 @@
                             </div>
                              
                             <div class="search__button">    
-                                 <button class="button__default" >Найти</button>
+                                 <button class="button__default " type="submit">Найти</button>
                             </div>
     
                         </form>
@@ -118,7 +118,7 @@
                             <ul class="main-menu__list list">
                                 <li class="list__item sub-menu">
                                     <a href="" class="list__link  link">Каталог Товаров</a>
-                                    <button class="list__button" type="submit"></button>
+                                    <button class="list__button" type="button"></button>
                                     <ul class="sub-menu__list" >
                                         <li class="sub-menu__column column-1">
                                             <ul>
@@ -166,35 +166,48 @@
     </header>
 
     <main class="main">
+        <h1 class="visually-hidden">
+            Интернет-магазин «Девайс»
+        </h1>
+
         <section class="slider">
+            <h2 class="visually-hidden">
+                Слайдер товаров
+            </h2>
             <div class="slider__body">
                 <div class="slider__container container">
-                    <div class="slider__content active">
+
+                    <div class="slider__control ">
+                        <button class="slider__arrow" type="button" >
+                            <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
+                            </svg>
+                                
+                        </button>
+                        
+                        <button class="slider__arrow" type="button">
+                        
+
+                            <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/>
+                            </svg>
+                                
+                        </button>
+                    </div>
+
+                    <div class="slider__content active ">
+
+                        <div class="slider__img ">
+                            <img src="img/png/slider-1.png" alt="Квадракоптер">
+
+                        </div>
                         
                         <span class="slider__number">01</span>
 
-                        <div class="slider__control">
-                            <button class="slider__arrow" type="button">
-                                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
-                                </svg>
-                                    
-                            </button>
-                            <img src="img/png/slider-1.png" alt="Квадракоптер">
-                            <button class="slider__arrow" type="button">
-                            
-
-                                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/>
-                                </svg>
-                                    
-                            </button>
-                        </div>
-
                         <article class="slider__article">
-                            <h2 class="slider__title title">
+                            <b class="slider__title title">
                                 Порхает как бабочка, жалит как пчела!
-                            </h2>
+                            </b>
 
                             <p class="slider__text text">
                                 Этот обычный, на первый взгляд, 
@@ -220,30 +233,17 @@
 
                     <div class="slider__content">
                         
-                        <span class="slider__number">01</span>
+                        <span class="slider__number">02</span>
 
-                        <div class="slider__control">
-                            <button class="slider__arrow" type="button">
-                                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
-                                </svg>
-                                    
-                            </button>
+                        <div class="slider__img ">
                             <img src="img/png/slider-1.png" alt="Квадракоптер">
-                            <button class="slider__arrow" type="button">
-                            
 
-                                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/>
-                                </svg>
-                                    
-                            </button>
                         </div>
 
                         <article class="slider__article">
-                            <h2 class="slider__title title">
+                            <b class="slider__title title">
                                 Порхает как бабочка, жалит как пчела!
-                            </h2>
+                            </b>
 
                             <p class="slider__text text">
                                 Этот обычный, на первый взгляд, 
@@ -251,7 +251,7 @@
                                 замаскированным под стандартную камеру.
                             </p>
                             
-                            <a href="" class="slider__link">Подробнее</a>
+                            <a href="" class="slider__link link-button link">Подробнее</a>
 
                             <ul class="slider__list">
                                 <li class="slider__item">
@@ -267,32 +267,19 @@
                         </article>
                     </div>
 
-                    <div class="slider__content ">
+                    <div class="slider__content">
                         
-                        <span class="slider__number">01</span>
+                        <span class="slider__number">03</span>
 
-                        <div class="slider__control">
-                            <button class="slider__arrow" type="button">
-                                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
-                                </svg>
-                                    
-                            </button>
+                        <div class="slider__img ">
                             <img src="img/png/slider-1.png" alt="Квадракоптер">
-                            <button class="slider__arrow" type="button">
-                            
 
-                                <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M-5.24537e-06 1.74846e-06L3.49999 1.44248e-06L20 30L3.5 60L0 60L16.2 30L-5.24537e-06 1.74846e-06Z" fill="black"/>
-                                </svg>
-                                    
-                            </button>
                         </div>
 
                         <article class="slider__article">
-                            <h2 class="slider__title title">
+                            <b class="slider__title title">
                                 Порхает как бабочка, жалит как пчела!
-                            </h2>
+                            </b>
 
                             <p class="slider__text text">
                                 Этот обычный, на первый взгляд, 
@@ -300,7 +287,7 @@
                                 замаскированным под стандартную камеру.
                             </p>
                             
-                            <a href="" class="slider__link link">Подробнее</a>
+                            <a href="" class="slider__link link-button link">Подробнее</a>
 
                             <ul class="slider__list">
                                 <li class="slider__item">
@@ -317,15 +304,18 @@
                     </div>
 
                     <div class="slider__dots">
-                        <button class="slider__dot active"></button>
-                        <button class="slider__dot"></button>
-                        <button class="slider__dot"></button>
+                        <button class="slider__dot active" type="button"></button>
+                        <button class="slider__dot" type="button"></button>
+                        <button class="slider__dot" type="button"></button>
                     </div>
                 </div>
             </div>
         </section>
         
         <section class="products">
+            <h2 class="visually-hidden">
+                Товары
+            </h2>
             <div class="products__body">
                 <div class="products__container container">
                     <div class="products__content">
@@ -336,12 +326,12 @@
                                     <h3 class="products__subtitle subtitle">
                                         Виртуальная реальность
                                     </h3>
-    
-                                    <button class="products__button" type="button">
+                                    
+                                    <div class="products__fake-button" >
                                         <svg height="100" width="100"><use xlink:href="#product-1"></use></svg>
-    
-                                    </button>
+                                    </div>
                                 </a>
+
                                 
                             </li>
 
@@ -352,11 +342,13 @@
                                     <h3 class="products__subtitle subtitle">
                                         Моноподы для селфи
                                     </h3>
-
-                                    <button class="products__button" type="button">
+                                    
+                                    <div class="products__fake-button" >
                                         <svg height="100" width="100"><use xlink:href="#product-2"></use></svg>
-                                    </button>
+                                    </div>
+
                                 </a>
+
                                 
                             </li>
 
@@ -368,11 +360,12 @@
                                     <h3 class="products__subtitle subtitle">
                                         Экшн-камеры                                
                                     </h3>
-    
-                                    <button class="products__button" type="button">
+                                    
+                                    <div class="products__fake-button" >
                                         <svg height="100" width="100"><use xlink:href="#product-3"></use></svg>
-                                    </button>
+                                    </div>
                                 </a>
+    
                                 
                             </li>
 
@@ -382,11 +375,12 @@
                                     <h3 class="products__subtitle subtitle">
                                         Фитнес-браслеты                              
                                     </h3>
-    
-                                    <button class="products__button" type="button">
+                                    
+                                    <div class="products__fake-button" >
                                         <svg height="100" width="100"><use xlink:href="#product-4"></use></svg>
-                                    </button>
+                                    </div>
                                 </a>
+    
                                
                                
                                 
@@ -398,11 +392,13 @@
                                     <h3 class="products__subtitle subtitle">
                                         Умные часы                                
                                     </h3>
+                                    
+                                    <div class="products__fake-button" >
     
-                                    <button class="products__button" type="button">
-                                        <svg height="100" width="100"><use xlink:href="#product-5"></use></svg>
-                                    </button>
+                                            <svg height="100" width="100"><use xlink:href="#product-5"></use></svg>
+                                    </div>
                                 </a>
+    
                                
                               
                                 
@@ -414,10 +410,10 @@
                                     <h3 class="products__subtitle subtitle">
                                         Квадрокоптеры                             
                                     </h3>
-    
-                                    <button class="products__button" type="button">
+                                    
+                                    <div class="products__fake-button" >
                                         <svg height="100" width="100"><use xlink:href="#product-6"></use></svg>
-                                    </button>
+                                    </div>
                                 </a>
                                 
                             </li>
@@ -431,6 +427,9 @@
 
 
         <section class="offer outer">
+            <h2 class="visually-hidden">
+                Услуги
+            </h2>
             <div class="offer__body">
                 <div class="offer__container container">
                     <div class="offer__content">
@@ -460,25 +459,28 @@
                             </li>
                         </ul>
 
-                        <div class="offer__info">
-                            <article class="offer__article">
-                                <h2 class="offer__title title">
+                        <article class="offer__info " >
+                            <div class="offer__article  ">
+                                <h3 class="offer__title title">
                                     Доставка
-                                </h2>
+                                </h3>
     
                                 <p class="offer__text text">
                                     Мы с удовольствием доставим ваш товар прямо
                                     к вашему подъезду совершенно бесплатно! Ведь
                                     мы неплохо заработаем, поднимая его на ваш этаж.
                                 </p>
-                            </article>
-                        </div>
+                            </div>
+                        </article>
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="delivery outer">
+            <h2 class="visually-hidden">
+                Доставка под заказ
+            </h2>
             <div class="delivery__body">
                 <div class="delivery__conteiner container">
                     <div class="delivery__content">
@@ -493,14 +495,16 @@
         </section>
 
         <section class="about outer">
+            <h2 class="visually-hidden">
+                О компании и Контакты
+            </h2>
             <div class="about__body">
                 <div class="about__container container">
                     <div class="about__content">
                         <div class="about__company-info">
-                            <article class="about__article">
-                                <h2 class="about__title title">
+                                <h3 class="about__title title">
                                     О нас
-                                </h2>
+                                </h3>
 
                                 <p class="about__text text">
                                     Огромный выбор гаджетов не оставит равнодушным гика, 
@@ -513,26 +517,24 @@
                                 </p>
 
                                 <ul class="about__list">
-                                    <li class="about__item">
+                                    <li class="about__item text-bold">
                                         Меловые линии
                                     </li>
-                                    <li class="about__item">
+                                    <li class="about__item text-bold">
                                         СДИК
                                     </li>
-                                    <li class="about__item">
+                                    <li class="about__item text-bold">
                                         ТоксБерри
                                     </li>
                                 </ul>
 
                                 <a href="#" class="about__link-button link-button link">Подробнее о нас</a>
-                            </article>
                         </div>
 
                         <div class="about__contacts">
-                            <div class="about__article">
-                                <h2 class="about__title title">
+                                <h3 class="about__title title">
                                     Контакты
-                                </h2>
+                                </h3>
         
                                 <p class="about__text text">
                                     Вы можете забрать товар сами, заехав в наш офис. 
@@ -572,7 +574,6 @@
 
                                <a href="#" class="about__link-button link-button link">Напишите нам</a>
 
-                            </div>
                         </div>
                     </div>
 
@@ -582,30 +583,32 @@
         </section>
 
         <section class="form outer">
+            <h2 class="visually-hidden">
+                Рассылка
+            </h2>
             <div class="form__body">
                 <div class="form__contaiter container">
                     <div class="form__content">
-                        <article class="form__article">
-                            <h2 class="form__title title">
+                        <div class="form__wrapper">
+                            <h3 class="form__title title">
                                 Подпишитесь на рассылку
-                            </h2>
+                            </h3>
 
                             <p class="form__text text">
                                 Еженедельный дайджест с обзорами новинок,
                                 длительными тест-драйвами, распаковками, а также акции,
                                 спецпредложения и вот это вот всё.
                             </p>
-                        </article>
+                        </div>
 
-                        <form action="#" class="form__subscription">
+                        <form action="https://echo.htmlacademy.ru/" method="get" class="form__subscription">
                         
                             <div class="form__email">
                                 <label >
                                     <input type="email" placeholder="Ваш e-mail" >
                                 </label>
 
-                                <button class="form__button link">Подписаться</button>
-
+                                <button class="form__button link" type="submit">Подписаться</button>
                             </div>
 
 
