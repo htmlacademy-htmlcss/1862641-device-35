@@ -94,7 +94,7 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
-  src: local("Raleway"), url("/fonts/raleway/raleway-800.woff2") format("woff2");
+  src: local("Raleway"), url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 .visually-hidden {
   position: absolute;
@@ -314,16 +314,16 @@ main {
 }
 
 .menu-top__login button {
-  background-image: url("/img/svg/icons.svg");
+  background-image: url("../img/svg/icons.svg");
 }
 
 .menu-top__compare button {
-  background-image: url("/img/svg/compare.svg");
+  background-image: url("../img/svg/compare.svg");
 }
 
 .menu-top__cart button {
   position: relative;
-  background-image: url("/img/svg/cart.svg");
+  background-image: url("../img/svg/cart.svg");
   z-index: 5;
   margin: 35px 0;
 }
@@ -718,7 +718,7 @@ main {
 .-deliver::after {
   width: 140px;
   min-height: 170px;
-  background-image: url("../img/png/delivery.png");
+  background-image: url("../img/svg/delivery.svg");
 }
 
 .-warranty {
@@ -767,7 +767,7 @@ main {
   width: 125px;
   height: 100px;
   background-color: #FFE17F;
-  background-image: url("../img/svg/delivery.svg");
+  background-image: url("../img/svg/delivery__rar.svg");
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
