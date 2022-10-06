@@ -82,18 +82,21 @@ h1, h2, h3, h4, h5, h6 {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 400;
+  font-display: swap;
   src: local("Rubik"), url("../fonts/rubik/rubik-400.woff2") format("woff2");
 }
 @font-face {
   font-family: "Rubik";
   font-style: normal;
   font-weight: 700;
+  font-display: swap;
   src: local("Rubik"), url("../fonts/rubik/rubik-700.woff2") format("woff2");
 }
 @font-face {
   font-family: "Raleway";
   font-style: normal;
   font-weight: 800;
+  font-display: swap;
   src: local("Raleway"), url("../fonts/raleway/raleway-800.woff2") format("woff2");
 }
 .visually-hidden {
