@@ -7,6 +7,7 @@
     <title>Device </title>
 </head>   
 <body class="body">   
+<!-- svg sprites -->
     <svg display="none">
         <symbol id="product-1"  viewBox="0 0 97 55" fill="none" xmlns="http://www.w3.org/2000/svg">
             <g>
@@ -51,6 +52,9 @@
         </symbol>
         
     </svg>
+<!-- svg sprites -->
+
+<!-- MAIN HEADER -->
     <header class="header">
         <div class="header__body">
             <div class="header__container container ">     
@@ -90,6 +94,7 @@
                           
                             <button class="button__default" type="button">Корзина</button>
                         </div>
+                        
 
                     </div>
 
@@ -146,7 +151,15 @@
             </div>    
         </div>
     </header>
+<!-- MAIN HEADER -->
 
+
+
+
+
+
+
+<!-- MAIN CONTENT -->
     <main class="main">
         <h1 class="visually-hidden">
             Интернет-магазин «Девайс»
@@ -422,14 +435,14 @@
                         <ul class="offer__link-buttons">
 
                             <li class="offer__item">
-                                 <a href="#" class="offer__link-button link offer__link-button-active">
+                                 <a href="#" class="offer__link-button link link-button offer__link-button-active">
                                     Доставка
                                  </a>
                             </li>
 
                             <li class="offer__item">
                                 
-                                <a href=""class="offer__link-button link-button link">
+                                <a href=""class="offer__link-button link-button  link ">
                                     Гарантия
                                 </a>
 
@@ -437,7 +450,7 @@
 
                             <li class="offer__item">
                                 
-                                <a href=""class="offer__link-button link-button link">
+                                <a href=""class="offer__link-button link-button  link">
                                     Кредит
                                 </a>
                             </li>
@@ -485,14 +498,14 @@
             </div>
         </section>
 
-        <section class="delivery outer">
+        <section class="delivery outer" id="#delivery">
             <h2 class="visually-hidden">
                 Доставка под заказ
             </h2>
             <div class="delivery__body">
                 <div class="delivery__conteiner container">
                     <div class="delivery__content">
-                        <a href="#" class="delivery__link">
+                        <a href="#popup" class="delivery__link">
                             <h3 class="delivery__subtitle subtitle">
                                 Доставим редкий товар под заказ
                             </h3>
@@ -626,7 +639,13 @@
             </div>
         </section>
     </main>
-        <footer class="footer">
+ <!-- MAIN CONTENT -->
+
+
+
+
+<!-- MAIN FOOTER -->
+    <footer class="footer">
             <div class="footer__body">
                 <div class="footer__container container">
                     
@@ -692,9 +711,74 @@
                     </div>
                 </div>
             </div>
-        </footer>
+    </footer>
+<!-- MAIN FOOTER -->
 
-    
+
+
+<!-- POPUP -->
+
+    <div class="popup" id="popup">
+        <a href="#" class="popup__close-area"></a>
+        <div class="popup__body">
+            <div class="popup__content">
+                <div class="popup__titlle-wrapper">
+                    <h3 class="popup__title title">
+                        Доставка под заказ
+                        
+                    </h3>
+                    
+                    <a href="#delivery" class="popup__close">
+                        <span class="visually-hidden">Закрыть окно.</span>
+                    </a>
+                </div>
+                
+                <div class="popup__wrapper-form">
+                    <form action="" class="popup__form">            
+                        <fieldset class="popup__group group-input">
+                            <label class="popup__label">
+                                <p class="popup__text-bold text-bold">Ваше имя:</p>
+                                <input class="popup__input" type="name" placeholder="Введите имя" >
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="popup__group group-input">
+                            <label class="popup__label">
+                                <p class="popup__text-bold text-bold">Ваш e-mail:</p>
+
+                                <input class="popup__input -email" type="email" placeholder="Введите e-mail" value="почта" >
+                            </label>
+                        </fieldset>
+
+                        <fieldset class="popup__group group-area">
+                            <p class="popup__text-bold text-bold">Что нужно привезти:</p>
+
+                            <textarea  class="popup__textarea" placeholder="В сводобной форме"></textarea>
+                        </fieldset>
+
+                        <fieldset class="popup__group group-number">
+                            <label >
+                                <p class="popup__text-bold text-bold amount">Количество:</p>
+
+                                <button class="popup__button" type="button">-</button>
+                                <input class="popup__number" type="number" min="1" value="1">
+                                <button class="popup__button" type="button">+</button>
+
+                            </label>                            
+                        </fieldset>
+
+                        <div class="popup__link-button-wrapper">
+                            <button class="popup__link-button link-button link">Отправить</button>
+                        </div>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+<!-- POPUP -->
+
+<script src="js/script.js"></script> 
 
 </body>
 </html>
