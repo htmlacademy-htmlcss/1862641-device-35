@@ -92,7 +92,73 @@
     
                          <div class="menu-top__cart button-wrapper cart">
                           
-                            <button class="button__default" type="button">Корзина</button>
+                            <button class="button__default cart__button" type="button">Корзина</button>
+
+                            <div class="cart__popup">
+                                <a href="#" class="popup__close-area"></a>
+
+                                <div class="cart__popup-body">
+                                    <div class="cart__popup-content">
+
+                                        <ul class="cart__popup-list">
+                                            <li class="cart__popup-item">
+                                                
+                                                    <div class="cart__popup-wrapper">
+
+                                                        <a href="#" class="cart__popup-product-link">
+                                                            <figure class="cart__popup-figure">
+                                                                <img src="img/jpeg/monopod_mini.jpg" alt="Любительская селфи-палка" width="39" height="43">
+                                                            </figure>
+    
+                                                            <p class="cart__popup-text">
+                                                                Любительская 
+                                                                селфи-палка
+                                                            </p>
+                                                        </a>
+
+                                                        <a href="#" class="cart__popup-close"></a>
+                                                    </div>
+                                            </li>
+                                        
+                                            <li class="cart__popup-item">
+                                                
+
+                                                        <div class="cart__popup-wrapper">
+
+                                                            <a href="#" class="cart__popup-product-link">
+                                                                <figure class="cart__popup-figure">
+                                                                    <img src="img/jpeg/monopod_mini2.jpg" alt="Профессиональная селфи-палка" width="39" height="43">
+                                                                </figure>
+    
+                                                                <p class="cart__popup-text">
+                                                                    Профессиональная 
+                                                                    селфи-палка
+                                                                </p>
+                                                            </a>
+                                                            
+                                                            <a href="#" class="cart__popup-close"></a>
+
+                                                        </div>
+                                            </li>
+
+                                        </ul>
+
+                                        <div class="cart__popup-total">
+                                            <p class="cart__popup-text">
+                                                Товаров: 2
+                                            </p>
+
+                                            <p class="cart__popup-text">
+                                                Сумма: 2000 &#8381;
+                                            </p>
+                                        </div>
+
+                                        <div class="cart__popup-link-wrapper">
+                                            <a href="#" class="cart__popup-link">Открыть корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                         
 
@@ -736,18 +802,18 @@
                 <div class="popup__wrapper-form">
                     <form action="" class="popup__form">            
                         <fieldset class="popup__group group-input">
-                            <label class="popup__label">
-                                <p class="popup__text-bold text-bold">Ваше имя:</p>
-                                <input class="popup__input" type="name" placeholder="Введите имя" >
-                            </label>
+                                <label class="popup__label">
+                                    <p class="popup__text-bold text-bold">Ваше имя:</p>
+                                    <input class="popup__input name" type="name" placeholder="Введите имя" >
+                                </label>
                         </fieldset>
 
-                        <fieldset class="popup__group group-input">
-                            <label class="popup__label">
-                                <p class="popup__text-bold text-bold">Ваш e-mail:</p>
-
-                                <input class="popup__input -email" type="email" placeholder="Введите e-mail" value="почта" >
-                            </label>
+                        <fieldset class="popup__group group-input ">
+                                <label class="popup__label">
+                                    <p class="popup__text-bold text-bold">Ваш e-mail:</p>
+    
+                                    <input class="popup__input mail" type="email" placeholder="Введите e-mail" value="почта" >
+                                </label>
                         </fieldset>
 
                         <fieldset class="popup__group group-area">
@@ -758,11 +824,24 @@
 
                         <fieldset class="popup__group group-number">
                             <label >
-                                <p class="popup__text-bold text-bold amount">Количество:</p>
+                                <p class="popup__text-bold text-bold">
+                                    <a href="#" class=" amount">Количество:
+                                        
+                                        <span class="amount__text">
+                                            Постараемся найти, 
+                                            сколько нужно. Привезём сколько
+                                            получится по 
+                                            требованиям 
+                                            к провозу багажа.
+                                        </span>
+                                    </a>
 
-                                <button class="popup__button" type="button">-</button>
+
+                                </p>
+                                
+                                <button class="popup__button minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
                                 <input class="popup__number" type="number" min="1" value="1">
-                                <button class="popup__button" type="button">+</button>
+                                <button class="popup__button plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
 
                             </label>                            
                         </fieldset>
