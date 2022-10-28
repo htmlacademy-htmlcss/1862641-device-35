@@ -2,13 +2,21 @@ const subMenuLink = document.querySelector('.link-main');
 const subMenuList = document.querySelector('.sub-menu__list');
 const orderLink = document.querySelector('.delivery__link');
 const popUp = document.querySelector('.popup');
-const close = document.querySelector('.popup__close')
-const closeArea = document.querySelector('.popup__close-area')
-const offerLink = document.querySelector('.offer__link-button')
-const offerArticle = document.querySelector('.offer__info')
+const close = document.querySelector('.popup__close');
+const closeArea = document.querySelector('.popup__close-area');
+const offerLinks = document.querySelector('.offer__link-buttons');
+const offerLink = document.querySelectorAll('.offer__link-button');
+const cartButton = document.querySelector('.cart__button');
+const cartPopup = document.querySelector('.cart__popup');
+
+
+const offerArticle = document.querySelector('.offer__info');
 
 const dots = document.querySelector('.slider__dots');
 
+
+console.log(offerLinks)
+console.log(offerLink)
 console.log(offerArticle)
 
 
@@ -34,12 +42,9 @@ closeArea.addEventListener('click', function(event){
     popUp.classList.remove('active');
 })
 
-offerLink.addEventListener('click', function(event){
+cartButton.addEventListener('click', function(event){
     event.preventDefault()
-    offerLink.classList.remove('offer__link-button-active');
+    cartPopup.classList.toggle('active');
 })
-
-console.log(offerLink)
-
 
 
