@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/ico/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <title>Device </title>
 </head>   
@@ -93,7 +94,7 @@
                          <div class="menu-top__cart button-wrapper cart">
                           
                             <button class="button__default cart__button" type="button">Корзина</button>
-
+                            <span class="cart__summ">2</span>
                             <div class="cart__popup">
 
                                 <div class="cart__popup-body">
@@ -273,6 +274,7 @@
                                 Этот обычный, на первый взгляд, 
                                 квадрокоптер оснащен мощным лазером, 
                                 замаскированным под стандартную камеру.
+                                
                             </p>
                             
                             <a href="#" class="slider__link link-button link">Подробнее</a>
@@ -507,7 +509,7 @@
 
                             <li class="offer__item">
                                 
-                                <a href=""class="offer__link-button link-button  link ">
+                                <a href="#"class="offer__link-button link-button  link ">
                                     Гарантия
                                 </a>
 
@@ -515,7 +517,7 @@
 
                             <li class="offer__item">
                                 
-                                <a href=""class="offer__link-button link-button  link">
+                                <a href="#"class="offer__link-button link-button  link">
                                     Кредит
                                 </a>
                             </li>
@@ -804,17 +806,17 @@
                 </div>
                 
                 <div class="popup__wrapper-form">
-                    <form action="" class="popup__form">            
+                    <form action="https://echo.htmlacademy.ru/" class="popup__form">            
                         <fieldset class="popup__group group-input">
                                 <label class="popup__label">
-                                    <p class="popup__text-bold text-bold">Ваше имя:</p>
-                                    <input class="popup__input name" type="name" placeholder="Введите имя" >
+                                    <span class="popup__text-bold text-bold">Ваше имя:</span>
+                                    <input class="popup__input user-name" type="name" placeholder="Введите имя" >
                                 </label>
                         </fieldset>
 
                         <fieldset class="popup__group group-input  ">
                                 <label class="popup__label mail " >      
-                                      <p class="popup__text-bold text-bold">Ваш e-mail:</p>
+                                      <span class="popup__text-bold text-bold">Ваш e-mail:</span>
                                 
                                     <input class="popup__input letter"  type="email" placeholder="Введите e-mail" value="почта" >
                                 </label>
@@ -828,7 +830,7 @@
 
                         <fieldset class="popup__group group-number">
                             <label >
-                                <p class="popup__text-bold text-bold">
+                                <span class="popup__text-bold text-bold">
                                     <a href="#" class=" amount">Количество:
                                         
                                         <span class="amount__text">
@@ -841,11 +843,13 @@
                                     </a>
 
 
-                                </p>
+                                </span>
                                 
-                                <button class="popup__button minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+                                <div class="group-number__wrapper">
+                                    <button class="popup__button minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
                                 <input class="popup__number" type="number" min="1" value="1">
                                 <button class="popup__button plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                                </div>
 
                             </label>                            
                         </fieldset>
