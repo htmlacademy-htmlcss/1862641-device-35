@@ -1765,6 +1765,7 @@ main {
   position: relative;
   z-index: 10;
   color: #000;
+  outline: none;
 }
 .amount::after {
   content: "";
@@ -1827,8 +1828,6 @@ main {
   flex-basis: 180px;
   width: 100%;
   flex-grow: 1;
-  display: flex;
-  align-items: center;
 }
 
 .popup__close {
@@ -1957,6 +1956,10 @@ main {
 }
 .popup__textarea:placeholder-shown {
   opacity: 0.5;
+}
+
+.group-number__wrapper {
+  display: flex;
 }
 
 .popup__number {

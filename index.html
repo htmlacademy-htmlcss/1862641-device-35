@@ -509,7 +509,7 @@
 
                             <li class="offer__item">
                                 
-                                <a href="#"class="offer__link-button link-button  link ">
+                                <a href="#" class="offer__link-button link-button  link ">
                                     Гарантия
                                 </a>
 
@@ -517,7 +517,7 @@
 
                             <li class="offer__item">
                                 
-                                <a href="#"class="offer__link-button link-button  link">
+                                <a href="#" class="offer__link-button link-button  link">
                                     Кредит
                                 </a>
                             </li>
@@ -808,15 +808,15 @@
                 <div class="popup__wrapper-form">
                     <form action="https://echo.htmlacademy.ru/" class="popup__form">            
                         <fieldset class="popup__group group-input">
+                            <p class="popup__text-bold text-bold">Ваше имя:</p>
                                 <label class="popup__label">
-                                    <span class="popup__text-bold text-bold">Ваше имя:</span>
                                     <input class="popup__input user-name" type="name" placeholder="Введите имя" >
                                 </label>
                         </fieldset>
 
                         <fieldset class="popup__group group-input  ">
+                            <p class="popup__text-bold text-bold">Ваш e-mail:</p>
                                 <label class="popup__label mail " >      
-                                      <span class="popup__text-bold text-bold">Ваш e-mail:</span>
                                 
                                     <input class="popup__input letter"  type="email" placeholder="Введите e-mail" value="почта" >
                                 </label>
@@ -829,29 +829,31 @@
                         </fieldset>
 
                         <fieldset class="popup__group group-number">
-                            <label >
-                                <span class="popup__text-bold text-bold">
-                                    <a href="#" class=" amount">Количество:
-                                        
-                                        <span class="amount__text">
-                                            Постараемся найти, 
-                                            сколько нужно. Привезём сколько
-                                            получится по 
-                                            требованиям 
-                                            к провозу багажа.
-                                        </span>
-                                    </a>
+                            <p class="popup__text-bold text-bold">
+                                <a href="#" class=" amount">Количество:
+                                    
+                                    <span class="amount__text">
+                                        Постараемся найти, 
+                                        сколько нужно. Привезём сколько
+                                        получится по 
+                                        требованиям 
+                                        к провозу багажа.
+                                    </span>
+                                </a>
 
-
-                                </span>
+                            </p>
+                            
+                            <div class="group-number__wrapper">
                                 
-                                <div class="group-number__wrapper">
-                                    <button class="popup__button minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
-                                <input class="popup__number" type="number" min="1" value="1">
-                                <button class="popup__button plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
-                                </div>
 
-                            </label>                            
+                                <label for="number"></label>    
+                                <button class="popup__button minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
+          
+                                    <input class="popup__number" type="number" id="number" min="1" value="1">
+                                
+                                <button class="popup__button plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                            </div>
+
                         </fieldset>
 
                         <div class="popup__link-button-wrapper">
