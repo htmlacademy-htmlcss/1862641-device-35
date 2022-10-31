@@ -51,7 +51,7 @@
         </symbol>
         
     </svg>
-    <header class="header">
+    <header class="header ">
         <div class="header__body">
             <div class="header__container container ">     
                 <div class="header__content -catalog">
@@ -63,21 +63,22 @@
                         <form action="https://echo.htmlacademy.ru/" class="menu-top__wrapper search">
                             <div class="search__input-wrapper">
                                 <label >
-                                    <input type="search" class="search__input" placeholder="Поиск по сайту" value="Текст поиска">
+                                    <input type="search" class="search__input" placeholder="Поиск по сайту" value="Текс поиска">
                                 </label>
                             </div>
                              
                             <div class="search__button">    
                                  <button class="button__default" type="submit">Найти</button>
                             </div>
+                            
     
                         </form>
     
                         <div class="menu-top__login button-wrapper">
-                            <button class="button__default" type="button">Коля Петухов</button>
+                            <button class="button__default" type="button">Коля Путехов</button>
                         </div>
 
-                        <div class="menu-top__exit button-wrapper">
+                        <div class="menu-top__exit button-wrapper ">
                             <button class="button__default" type="button">Выйти</button>
                         </div>
          
@@ -88,14 +89,81 @@
     
                          <div class="menu-top__cart button-wrapper cart">
                           
-                            <button class="button__default" type="button">Корзина</button>
+                            <button class="button__default cart__button" type="button">Корзина</button>
+
+                            <div class="cart__popup">
+                                <a href="#" class="popup__close-area"></a>
+
+                                <div class="cart__popup-body">
+                                    <div class="cart__popup-content">
+
+                                        <ul class="cart__popup-list">
+                                            <li class="cart__popup-item">
+                                                
+                                                    <div class="cart__popup-wrapper">
+
+                                                        <a href="#" class="cart__popup-product-link">
+                                                            <figure class="cart__popup-figure">
+                                                                <img src="img/jpeg/monopod_mini.jpg" alt="Любительская селфи-палка" width="39" height="43">
+                                                            </figure>
+    
+                                                            <p class="cart__popup-text">
+                                                                Любительская 
+                                                                селфи-палка
+                                                            </p>
+                                                        </a>
+
+                                                        <a href="#" class="cart__popup-close"></a>
+                                                    </div>
+                                            </li>
+                                        
+                                            <li class="cart__popup-item">
+                                                
+
+                                                        <div class="cart__popup-wrapper">
+
+                                                            <a href="#" class="cart__popup-product-link">
+                                                                <figure class="cart__popup-figure">
+                                                                    <img src="img/jpeg/monopod_mini2.jpg" alt="Профессиональная селфи-палка" width="39" height="43">
+                                                                </figure>
+    
+                                                                <p class="cart__popup-text">
+                                                                    Профессиональная 
+                                                                    селфи-палка
+                                                                </p>
+                                                            </a>
+                                                            
+                                                            <a href="#" class="cart__popup-close"></a>
+
+                                                        </div>
+                                            </li>
+
+                                        </ul>
+
+                                        <div class="cart__popup-total">
+                                            <p class="cart__popup-text">
+                                                Товаров: 2
+                                            </p>
+
+                                            <p class="cart__popup-text">
+                                                Сумма: 2000 &#8381;
+                                            </p>
+                                        </div>
+
+                                        <div class="cart__popup-link-wrapper">
+                                            <a href="#" class="cart__popup-link">Открыть корзину</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
+                        
 
                     </div>
 
                     <div class="header__main-menu main-menu">
                         <nav class="main-menu__nav">
-                            <ul class="main-menu__list list ">
+                            <ul class="main-menu__list list">
                                 <li class="list__item sub-menu">
                                     <a href="" class="list__link  link link-main">Каталог Товаров</a>
 
@@ -105,7 +173,6 @@
                                                 <li class="sub-menu__item"><a href="#" class="sub-menu__link link">Виртульная реальность</a></li>
                                                 <li class="sub-menu__item"><a href="catalog.html" class="sub-menu__link link ">Моноподы для селфи</a></li>
                                                 <li class="sub-menu__item"><a href="" class="sub-menu__link link">Экшн-камеры</a></li>
-                                                
                                             </ul>
                                        </li>
 
@@ -136,7 +203,7 @@
                                 <li class="list__item">
                                     <a href="#" class="list__link link ">Гарантия</a>
                                 </li>
-
+                                
                                 <li class="list__item">
                                     <a href="#" class="list__link link ">Контакты</a>
                                 </li>
@@ -522,7 +589,7 @@
         </div>
     </footer>
 
-    <script src="/script.js"></script>
+    <script src="js/script.js"></script> 
 
 
 </body>

@@ -14,13 +14,13 @@ const offerArticle = document.querySelector('.offer__info');
 
 const dots = document.querySelector('.slider__dots');
 
+// Корзина товаров
+cartButton.addEventListener('click', function(event){
+    event.preventDefault()
+    cartPopup.classList.toggle('active');    
+})
 
-console.log(offerLinks)
-console.log(offerLink)
-console.log(offerArticle)
-
-
-
+//Дополнительное меню
 subMenuLink.addEventListener('click', function(event){
     event.preventDefault()
     subMenuLink.classList.toggle('active')
@@ -42,9 +42,6 @@ closeArea.addEventListener('click', function(event){
     popUp.classList.remove('active');
 })
 
-cartButton.addEventListener('click', function(event){
-    event.preventDefault()
-    cartPopup.classList.toggle('active');
-})
+
 
 
