@@ -1,11 +1,5 @@
 @charset "UTF-8";
 /*Обнуление*/
-* {
-  padding: 0;
-  margin: 0;
-  border: 0;
-}
-
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -64,11 +58,6 @@ img {
   vertical-align: top;
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-size: inherit;
-  font-weight: 400;
-}
-
 /*--------------------*/
 @font-face {
   font-family: "Rubik";
@@ -95,6 +84,18 @@ input[type=number] {
   -moz-appearance: textfield;
 }
 
+.normalize {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+.normalize-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -116,6 +117,9 @@ input[type=number] {
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
+}
+.button__default:disabled {
+  opacity: 0.1;
 }
 
 .title {
@@ -335,6 +339,9 @@ main {
 .search__button button:focus-visible {
   box-shadow: 0 0 0 2px #AF4FFF;
 }
+.search__button button:disabled {
+  opacity: 0.1;
+}
 
 .button-wrapper {
   min-width: 80px;
@@ -550,12 +557,17 @@ main {
   top: 24%;
 }
 
+.slider__arrow:disabled {
+  opacity: 0.1;
+}
+
 .slider__article {
   flex-basis: 550px;
   width: 550px;
   padding-top: 47px;
   margin-left: 41px;
   flex-grow: 1;
+  margin-bottom: 100px;
 }
 
 .slider__title {
@@ -573,8 +585,11 @@ main {
 }
 
 .slider__link {
-  display: block;
-  max-width: 220px;
+  display: inline-block;
+  width: 220px;
+}
+.slider__link::after {
+  top: 17px;
 }
 
 .slider__list {
@@ -670,9 +685,13 @@ main {
   height: 160px;
 }
 
+.offer.outer {
+  margin-top: 54px;
+}
+
 .offer__body {
   position: relative;
-  padding-bottom: 30px;
+  padding-bottom: 40px;
   z-index: 55;
 }
 .offer__body::before {
@@ -795,6 +814,7 @@ main {
 .offer__article {
   width: 880px;
   position: relative;
+  padding-top: 20px;
 }
 .offer__article::before {
   content: "";
@@ -809,7 +829,7 @@ main {
 .offer__info {
   display: flex;
   flex-direction: column;
-  padding-top: 97px;
+  padding-top: 77px;
   padding-left: 125px;
   position: relative;
   top: -10px;
@@ -819,7 +839,7 @@ main {
   display: block;
   position: absolute;
   background-repeat: no-repeat;
-  top: 100px;
+  top: 82px;
   right: 57px;
 }
 
@@ -863,7 +883,7 @@ main {
 }
 
 .delivery {
-  padding-top: 104px;
+  padding-top: 93px;
 }
 
 .delivery__link {
@@ -1082,6 +1102,7 @@ main {
 .foter__column {
   display: flex;
   flex-direction: column;
+  gap: 0 10px;
 }
 
 .foter__column-1 {
@@ -1111,6 +1132,7 @@ main {
 
 .footer__menu {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .footer__top {
@@ -1143,6 +1165,7 @@ main {
 }
 
 .footer__link {
+  display: block;
   color: #fff;
 }
 
@@ -1247,7 +1270,7 @@ main {
 .product-card__content {
   display: flex;
   align-items: baseline;
-  padding-top: 15px;
+  padding-top: 12px;
 }
 
 .sort {
@@ -1286,7 +1309,7 @@ main {
 }
 
 .form-card__fieldset:first-child {
-  padding-bottom: 31px;
+  padding-bottom: 32px;
 }
 .form-card__fieldset:first-child .form-card__legend:first-child {
   padding-top: 37px;
@@ -1297,7 +1320,7 @@ main {
   font-family: "Rubik";
   font-weight: 700;
   font-size: 18px;
-  line-height: 20px;
+  line-height: 22px;
   padding-bottom: 20px;
 }
 .form-card__legend::before {
@@ -1305,7 +1328,7 @@ main {
   display: block;
   width: 200px;
   border-top: 2px solid #000;
-  padding-top: 12px;
+  padding-top: 10px;
 }
 
 .form-card__range-wrapper {
@@ -1487,7 +1510,7 @@ main {
 
 .product-card__wrapper {
   background-color: #fff;
-  padding: 75px 35px 78px 35px;
+  padding: 60px 35px 78px 35px;
 }
 
 .product-card__subtitle {
@@ -1502,11 +1525,11 @@ main {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 25px;
+  gap: 27px 35px;
 }
 
 .product-card__name {
-  margin-top: 31px;
+  margin-top: 30px;
   width: 360px;
   display: flex;
   justify-content: space-between;
@@ -1534,6 +1557,7 @@ main {
   display: block;
   opacity: 1;
 }
+
 .product-card__link-wrapper {
   display: block;
   position: relative;
@@ -1872,6 +1896,7 @@ main {
   font-size: 16px;
   line-height: 20px;
   padding: 20px;
+  outline: none;
 }
 
 .mail {
@@ -1879,15 +1904,10 @@ main {
   position: relative;
   color: #000;
 }
-.mail::before {
-  content: "Забавный у вас адрес";
-  width: 250px;
+
+.mail__apostrofe {
   position: absolute;
   bottom: -25px;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 20px;
-  z-index: 55;
 }
 
 .popup__input {
@@ -2053,8 +2073,10 @@ main {
 
 .cart__popup-product-link {
   width: 80%;
+  min-height: 255px;
   display: flex;
   flex-grow: 0;
+  outline: none;
 }
 .cart__popup-product-link:hover {
   opacity: 0.7;
