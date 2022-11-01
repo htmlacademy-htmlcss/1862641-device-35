@@ -2073,7 +2073,6 @@ main {
 
 .cart__popup-product-link {
   width: 80%;
-  min-height: 255px;
   display: flex;
   flex-grow: 0;
   outline: none;
