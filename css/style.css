@@ -594,7 +594,7 @@ main {
 
 .slider__list {
   display: flex;
-  margin-top: 50px;
+  flex-wrap: wrap;
 }
 
 .slider__item {
@@ -603,6 +603,10 @@ main {
   font-size: 36px;
   line-height: 30px;
   color: #000;
+}
+
+.slider__item {
+  margin-top: 50px;
 }
 
 .slider__item span {
@@ -615,8 +619,8 @@ main {
   padding-top: 11px;
 }
 
-.slider__item + .slider__item {
-  padding-left: 20px;
+.slider__item:not(:last-child) {
+  margin-right: 20px;
 }
 
 .slider__dots {
@@ -920,6 +924,7 @@ main {
 }
 
 .delivery__subtitle {
+  width: 1000px;
   font-size: 20px;
   line-height: 23px;
   letter-spacing: 0.2em;
@@ -1523,7 +1528,6 @@ main {
 
 .product-card__list {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   gap: 27px 35px;
 }
