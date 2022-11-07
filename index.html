@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="img/favicon.ico">
     <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
 
     <link rel="stylesheet" href="css/style.css">
@@ -62,14 +63,14 @@
             <div class="header__container container ">     
                 <div class="header__content">
                         <a href="index.html" class="header__logo logo normalize">
-                            <img src="img/svg/logo.svg" alt="логотип device" width="145" height="36">
+                            <img src="img/svg/logo.svg" alt="логотип device." width="145" height="36">
                         </a>
                     <div class="header__menu-top menu-top">
                             
                         <form action="https://echo.htmlacademy.ru/" class="menu-top__wrapper search">
                             <div class="search__input-wrapper">
                                 <label >
-                                    <input type="search" class="search__input normalize" placeholder="Поиск по сайту">
+                                    <input type="search" class="search__input normalize" placeholder="Поиск по сайту" required>
                                 </label>
                             </div>
                              
@@ -79,22 +80,22 @@
     
                         </form>
     
-                        <div class="menu-top__login button-wrapper">
-                            <button class="button__default normalize" type="button">Войти</button>
+                        <div class="menu-top__login button-wrapper ">
+                            <button class="button__default normalize button-top" type="button">Войти</button>
                         </div>
 
                         <div class="menu-top__exit button-wrapper _hidden">
-                            <button class="button__default normalize" type="button">Выйти</button>
+                            <button class="button__default normalize button-top" type="button">Выйти</button>
                         </div>
          
 
                          <div class="menu-top__compare button-wrapper">
-                            <button class="button__default normalize" type="button">Сравнить</button>
+                            <button class="button__default normalize button-top" type="button">Сравнить</button>
                          </div>
     
                          <div class="menu-top__cart button-wrapper cart">
                           
-                            <button class="button__default cart__button normalize" type="button">Корзина</button>
+                            <button class="button__default cart__button normalize button-top" type="button">Корзина</button>
                             <span class="cart__summ">2</span>
                             <div class="cart__popup">
 
@@ -108,7 +109,7 @@
 
                                                         <a href="#" class="cart__popup-product-link normalize normalize">
                                                             <figure class="cart__popup-figure normalize">
-                                                                <img src="img/jpeg/monopod_mini.jpg " alt="Любительская селфи-палка" width="39" height="43">
+                                                                <img src="img/jpeg/monopod_mini.jpg " alt="Любительская селфи-палка." width="39" height="43">
                                                             </figure>
     
                                                             <p class="cart__popup-text normalize">
@@ -117,7 +118,7 @@
                                                             </p>
                                                         </a>
 
-                                                        <a href="#" class="cart__popup-close"></a>
+                                                        <button class="cart__popup-close normalize" type="button"></button>
                                                     </div>
                                             </li>
                                         
@@ -128,7 +129,8 @@
 
                                                             <a href="#" class="cart__popup-product-link normalize">
                                                                 <figure class="cart__popup-figure normalize">
-                                                                    <img src="img/jpeg/monopod_mini2.jpg" alt="Профессиональная селфи-палка" width="39" height="43">
+                                                                    <img src="img/jpeg/monopod_mini2.jpg" alt="Профессиональная селфи-палка.
+                                                                    " width="39" height="43">
                                                                 </figure>
     
                                                                 <p class="cart__popup-text normalize">
@@ -137,7 +139,7 @@
                                                                 </p>
                                                             </a>
                                                             
-                                                            <a href="#" class="cart__popup-close normalize"></a>
+                                                            <button class="cart__popup-close normalize" type="button"></button>
 
                                                         </div>
                                             </li>
@@ -240,13 +242,15 @@
                 <div class="slider__container container">
 
                     <div class="slider__control ">
+                        <span class="visually-hidden">Следущий слайд</span>
                         <button class="slider__arrow normalize" type="button" >
                             <svg width="20" height="60" viewBox="0 0 20 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                 <path d="M20 60H16.5L0 30L16.5 0H20L3.8 30L20 60Z" fill="black"/>
                             </svg>
                                 
                         </button>
-                        
+
+                        <span class="visually-hidden">Предыдущий слайд</span>
                         <button class="slider__arrow normalize" type="button">
                         
 
@@ -260,7 +264,7 @@
                     <div class="slider__content active ">
 
                         <div class="slider__img ">
-                            <img src="img/png/slider-1.png" width="560" alt="Квадракоптер">
+                            <img src="img/png/slider_1.png" width="560" alt="Квадракоптер.">
 
                         </div>
                         
@@ -298,7 +302,7 @@
                         <span class="slider__number">02</span>
 
                         <div class="slider__img ">
-                            <img src="img/png/slider-2.png" width="560" height="500" alt="Квадракоптер">
+                            <img src="img/png/slider_2.png" width="560" height="500" alt="Квадракоптер.">
 
                         </div>
 
@@ -328,7 +332,7 @@
                         <span class="slider__number">03</span>
 
                         <div class="slider__img ">
-                            <img src="img/png/slider-3.png" width="560" height="500" alt="Квадракоптер">
+                            <img src="img/png/slider_3.png" width="560" height="500" alt="Квадракоптер.">
 
                         </div>
 
@@ -366,8 +370,13 @@
                     </div>
 
                     <div class="slider__dots">
+                        <span class="visually-hidden">Страница слайдера 1</span>
                         <button class="slider__dot active normalize" type="button"></button>
+                        
+                        <span class="visually-hidden">Страница слайдера 2</span>
                         <button class="slider__dot normalize" type="button"></button>
+                        
+                        <span class="visually-hidden">Страница слайдера 3</span>
                         <button class="slider__dot normalize" type="button"></button>
                     </div>
                 </div>
@@ -384,7 +393,7 @@
                         <ul class="products__list normalize-list">
                             <li class="products__item normalize">
                                
-                                <a href="#" class="products__link">
+                                <a href="#" class="products__link normalize">
                                     <h3 class="products__subtitle subtitle normalize">
                                         Виртуальная <br>
                                         реальность
@@ -401,7 +410,7 @@
                             <li class="products__item normalize ">
 
 
-                                <a href="catalog.html" class="products__link">
+                                <a href="catalog.html" class="products__link normalize">
                                     <h3 class="products__subtitle subtitle">
                                         Моноподы <br>
                                         для селфи
@@ -420,7 +429,7 @@
                                
                            
 
-                                <a href="#" class="products__link">
+                                <a href="#" class="products__link normalize">
                                     <h3 class="products__subtitle subtitle normalize">
                                         Экшн-камеры                                
                                     </h3>
@@ -433,9 +442,9 @@
                                 
                             </li>
 
-                            <li class="products__item normalize">
+                            <li class="products__item normalize ">
 
-                                <a href="#" class="products__link">
+                                <a href="#" class="products__link normalize">
                                     <h3 class="products__subtitle subtitle normalize">
                                         Фитнес-браслеты                              
                                     </h3>
@@ -452,7 +461,7 @@
 
                             <li class="products__item normalize">
 
-                                <a href="#" class="products__link ">
+                                <a href="#" class="products__link normalize">
                                     <h3 class="products__subtitle subtitle normalize">
                                         Умные часы                                
                                     </h3>
@@ -470,7 +479,7 @@
 
                             <li class="products__item normalize">
 
-                                <a href="#" class="products__link">
+                                <a href="#" class="products__link normalize">
                                     <h3 class="products__subtitle subtitle normalize">
                                         Квадрокоптеры                             
                                     </h3>
@@ -502,24 +511,24 @@
                         <ul class="offer__link-buttons normalize-list">
 
                             <li class="offer__item normalize">
-                                 <a href="#" class="offer__link-button link link-button offer__link-button-active ">
+                                 <button class="offer__link-button link link-button offer__link-button-active normalize" type="button">
                                     Доставка
-                                 </a>
+                                 </button>
                             </li>
 
                             <li class="offer__item normalize">
                                 
-                                <a href="#" class="offer__link-button link-button  link ">
+                                <button class="offer__link-button link-button  link normalize" type="button">
                                     Гарантия
-                                </a>
+                                </button>
 
                             </li>
 
                             <li class="offer__item normalize">
                                 
-                                <a href="#" class="offer__link-button link-button  link">
+                                <button class="offer__link-button link-button  link normalize" type="button">
                                     Кредит
-                                </a>
+                                </button>
                             </li>
                         </ul>
 
@@ -530,8 +539,8 @@
                                 </h3>
     
                                 <p class="offer__text text normalize">
-                                    Мы с удовольствием доставим ваш товар прямо
-                                    к вашему подъезду совершенно бесплатно! Ведь
+                                    Мы с удовольствием доставим ваш товар прямо <br>
+                                    к вашему подъезду совершенно бесплатно! Ведь <br>
                                     мы неплохо заработаем, поднимая его на ваш этаж.
                                     
                                 </p>
@@ -570,16 +579,10 @@
             <h2 class="visually-hidden">
                 Доставка под заказ
             </h2>
-            <div class="delivery__body">
-                <div class="delivery__conteiner container">
-                    <div class="delivery__content">
-                        <a href="#popup" class="delivery__link">
-                            <h3 class="delivery__subtitle subtitle normalize">
-                                Доставим редкий товар под заказ                        
-                            </h3>
-                        </a>
-                    </div>
-                </div>
+            <div class="delivery__body delivery__conteiner container">
+                    <a href="#popup" class="delivery__link delivery__subtitle subtitle normalize">
+                         Доставим редкий товар под заказ     
+                    </a>
             </div>
         </section>
 
@@ -694,7 +697,7 @@
                         
                             <div class="form__email">
                                 <label >
-                                    <input type="email" class="normalize" placeholder="Ваш e-mail" >
+                                    <input type="email" class="normalize" placeholder="Ваш e-mail" required>
                                 </label>
 
                                 <button class="form__button link normalize" type="submit">Подписаться</button>
@@ -719,9 +722,9 @@
                     
                     <div class="footer__content">
                         <a href="index.html" class="footer__logo logo">
-                            <img src="img/svg/footer__logo.svg" alt="логотип device" width="145" height="36">
+                            <img src="img/svg/footer_logo.svg" alt="логотип device." width="145" height="36">
                         </a>
-                        <ul class="footer__list normalize-list">
+                        <ul class="footer__list normalize-list ">
                             <li class="foter__column foter__column-1 normalize">
                                 <p class="footer__text text normalize">
                                     Санкт-Петербург, набережная
@@ -730,10 +733,11 @@
                             </li>
                             <li class="foter__column foter__column-2 normalize">
 
-                                <ul class="footer__menu footer__top normalize">
+                                <ul class="footer__menu footer__top footer__top normalize-list">
                                     <li class="footer__item normalize"><a href="#" class="footer__link link">Доставка</a></li>
                                     <li class="footer__item normalize"><a href="#" class="footer__link link">Гарантия</a></li>
                                     <li class="footer__item normalize"><a href="#" class="footer__link link">Контакты</a></li>
+                                    
                                 </ul> 
 
                                 <ul class="footer__menu footer__bottom normalize-list">
@@ -769,7 +773,7 @@
 
                                     </li>
 
-                                    <li>
+                                    <li class="normalize">
                                         <a href="https://htmlacademy.ru/" class="footer__academy normalize">
                                             <svg class="logo-academy" width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />                
@@ -811,7 +815,7 @@
                         <fieldset class="popup__group group-input normalize">
                             <p class="popup__text-bold text-bold normalize">Ваше имя:</p>
                                 <label class="popup__label">
-                                    <input class="popup__input user-name normalize" type="text" placeholder="Введите имя" autofocus>
+                                    <input class="popup__input user-name normalize" type="text" placeholder="Введите имя" autofocus required> 
                                 </label>
                         </fieldset>
 
@@ -819,46 +823,52 @@
                             <p class="popup__text-bold text-bold normalize">Ваш e-mail:</p>
                                 <label class="popup__label mail " >      
                                     <span class="mail__apostrofe">Забавный у вас адрес</span>
-                                    <input class="popup__input letter normalize"  type="email" placeholder="Введите e-mail" value="почта">
+                                    <input class="popup__input letter normalize"  type="email" placeholder="Введите e-mail" value="почта" required>
                                 </label>
                         </fieldset>
 
                         <fieldset class="popup__group group-area normalize">
                             <p class="popup__text-bold text-bold normalize">Что нужно привезти:</p>
 
-                            <textarea  class="popup__textarea normalize" placeholder="В сводобной форме"></textarea>
+                            <textarea  class="popup__textarea normalize" placeholder="В сводобной форме" required></textarea>
                         </fieldset>
 
                         <fieldset class="popup__group group-number normalize">
-                            <p class="popup__text-bold text-bold normalize">
-                                <a href="#" class=" amount">Количество:
-                                    
-                                    <span class="amount__text">
-                                        Постараемся найти, 
-                                        сколько нужно. Привезём сколько
-                                        получится по 
-                                        требованиям 
-                                        к провозу багажа.
-                                    </span>
-                                </a>
 
-                            </p>
-                            
-                            <div class="group-number__wrapper">
+                               
+                                    <label  for="number" class="popup__label popup__tooltip  tooltip popup__text-bold text-bold">
+
+                                        Количество: 
+                                        
+                                        <div class=" tooltip__wrapper">
+
+                                            <button class="tooltip__amount normalize" type="button"></button>
+                                            <span class="tooltip__text">
+                                                Постараемся найти, 
+                                                сколько нужно. Привезём сколько
+                                                получится по 
+                                                требованиям 
+                                                к провозу багажа.
+                                            </span>
+                                        </div> 
+                                    </label>   
+                               
+                               
+                            <div class="group-number__wrapper">    
+                                <span class="visually-hidden">Уменьшить количество товара</span>
                                 
-
-                                <label  for="number"></label>    
                                 <button class="popup__button minus normalize" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();">-</button>
           
-                                    <input class="popup__number normalize" type="number" id="number" min="1" value="1">
-                                
+                                    <input class="popup__number normalize" type="number" id="number" min="1" value="1" required>
                                 <button class="popup__button plus normalize" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();">+</button>
+                                
+                                <span class="visually-hidden">Увеличить количество товара</span>
                             </div>
 
                         </fieldset>
 
                         <div class="popup__link-button-wrapper">
-                            <button class="popup__link-button link-button link normalize">Отправить</button>
+                            <button class="popup__link-button link-button link normalize" type="submit">Отправить</button>
                         </div>
                     </form>
                 </div>
