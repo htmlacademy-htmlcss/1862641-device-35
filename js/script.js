@@ -6,7 +6,7 @@ const close = document.querySelector('.popup__close');
 const closeArea = document.querySelector('.popup__close-area');
 const offerLinks = document.querySelector('.offer__link-buttons');
 const offerLink = document.querySelectorAll('.offer__link-button');
-const cartButton = document.querySelector('.cart__button');
+const cartButton = document.querySelector('.cart__link');
 const cartPopup = document.querySelector('.cart__popup');
 
 
@@ -33,7 +33,6 @@ orderLink.addEventListener('click', function(event){
 })
 
 close.addEventListener('click', function(event){
-    event.preventDefault()
     popUp.classList.remove('active');
 })
 
