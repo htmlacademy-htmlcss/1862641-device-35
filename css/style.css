@@ -1123,6 +1123,7 @@
 .form__email input {
   width: 560px;
   background-color: inherit;
+  font-family: inherit;
   min-height: 55px;
   padding-left: 17px;
   padding-right: 25px;
