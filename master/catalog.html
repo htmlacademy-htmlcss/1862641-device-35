@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="icon" href="img/ico/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon.png">
     <title>Device-catalog </title>
   <base href="https://htmlacademy-htmlcss.github.io/1862641-device-35/master/">
 </head> 
@@ -58,39 +58,39 @@
             <div class="header__container container ">     
                 <div class="header__content">
                         <a href="index.html" class="header__logo logo normalize">
-                            <img src="img/svg/logo.svg" alt="логотип device" width="145" height="36">
+                            <img src="img/svg/logo.svg" alt="логотип device." width="145" height="36">
                         </a>
                     <div class="header__menu-top menu-top">
                             
                         <form action="https://echo.htmlacademy.ru/" class="menu-top__wrapper search">
                             <div class="search__input-wrapper">
                                 <label >
-                                    <input type="search" class="search__input normalize" placeholder="Поиск по сайту">
+                                    <input type="search" class="search__input normalize" placeholder="Поиск по сайту" value="Текст поиска">
                                 </label>
                             </div>
                              
                             <div class="search__button">    
-                                 <button class="button__default normalize" type="submit">Найти</button>
+                                 <button class="link__default normalize" type="submit">Найти</button>
                             </div>
     
                         </form>
     
-                        <div class="menu-top__login button-wrapper">
-                            <button class="button__default normalize" type="button">Коля Петухов</button>
+                        <div class="menu-top__login link-wrapper  ">
+                            <a href="#" class="link__default normalize link-top">Коля Петухов</a>
                         </div>
 
-                        <div class="menu-top__exit button-wrapper">
-                            <button class="button__default normalize" type="button">Выйти</button>
+                        <div class="menu-top__exit link-wrapper">
+                            <a href="#"class="link__default normalize link-top">Выйти</a>
                         </div>
          
 
-                         <div class="menu-top__compare button-wrapper">
-                            <button class="button__default normalize" type="button">Сравнить</button>
+                         <div class="menu-top__compare link-wrapper">
+                            <a href="#" class="link__default normalize link-top">Сравнить</a>
                          </div>
     
-                         <div class="menu-top__cart button-wrapper cart">
+                         <div class="menu-top__cart link-wrapper cart">
                           
-                            <button class="button__default cart__button normalize" type="button">Корзина</button>
+                            <a href="#" class="link__default  normalize link-top cart__link" type="button">Корзина</a>
                             <span class="cart__summ">2</span>
                             <div class="cart__popup">
 
@@ -104,17 +104,18 @@
 
                                                         <a href="#" class="cart__popup-product-link normalize normalize">
                                                             <figure class="cart__popup-figure normalize">
-                                                                <img src="img/jpeg/monopod_mini.jpg " alt="Любительская селфи-палка" width="39" height="43">
+                                                                <img src="img/jpeg/monopod_mini.jpg " alt="Любительская селфи-палка." width="39" height="43">
                                                             </figure>
-    
+
                                                             <p class="cart__popup-text normalize">
                                                                 Любительская 
                                                                 селфи-палка
                                                             </p>
                                                         </a>
 
-                                                        <a href="#" class="cart__popup-close"></a>
+                                                        <button class="cart__popup-close normalize" type="button"></button>
                                                     </div>
+
                                             </li>
                                         
                                             <li class="cart__popup-item normalize">
@@ -124,7 +125,7 @@
 
                                                             <a href="#" class="cart__popup-product-link normalize">
                                                                 <figure class="cart__popup-figure normalize">
-                                                                    <img src="img/jpeg/monopod_mini2.jpg" alt="Профессиональная селфи-палка" width="39" height="43">
+                                                                    <img src="img/jpeg/monopod_mini2.jpg" alt="Профессиональная селфи-палка." width="39" height="43">
                                                                 </figure>
     
                                                                 <p class="cart__popup-text normalize">
@@ -184,7 +185,7 @@
                                         </li>
 
                                         <li class="sub-menu__column column-3 normalize">
-                                            <ul class="normalize">
+                                            <ul class="normalize-list">
                                                 <li class="sub-menu__item normalize"><a href="#" class="sub-menu__link link">Квадракоптеры</a></li>
 
                                             </ul>
@@ -215,7 +216,7 @@
         </div>
     </header>
 
-    <main>
+    <main class="main">
        <section class="breadcrumds">
             <div class="breadcrumds__body">
                 <div class="breadcrumds__contaiter container">
@@ -270,10 +271,10 @@
 
                                         <div class="form-card__range-scale" >
                                             <div class="form-card__range-bar" style="width: 119px" >
-                                            <button class="form-card__range-toggle toggle-min normalize">
+                                            <button class="form-card__range-toggle toggle-min normalize" type="button">
                                                 <span class="visually-hidden">Изменить минимальную цену.</span>
                                             </button>
-                                            <button class="form-card__range-toggle toggle-max normalize">
+                                            <button class="form-card__range-toggle toggle-max normalize" type="button">
                                                 <span class="visually-hidden">Изменить максимальную цену.</span>
                                             </button>
                                             </div>
@@ -338,7 +339,7 @@
 
                                 <fieldset class="form-card__fieldset fieldset normalize">
 
-                                    <legend class="form-card__legend"> BlueTooth</legend>
+                                    <legend class="form-card__legend"> Bluetooth</legend>
 
                                     <label class="form-card__label">
                                         <input type="radio" class="visually-hidden form-card__radio normalize" value="yes" name="bluetooth" checked>
@@ -358,7 +359,7 @@
 
                                 </fieldset>
                                 
-                                <a href="#" class="producnt-card__link-button link link-button">Показать</a>
+                                <button  class="producnt-card__link-button link link-button normalize" type="submit">Показать</button>
 
                             </form>
                         </div>
@@ -366,20 +367,25 @@
                         <div class="product-card__goods">
                             <div class="product-card__sort sort">
                                 <h3 class="product-card__subtitle subtitle normalize">
-                                    Сортировка
+                                    Сортировка:
                                 </h3>
 
-                                <a href="#" class="sort__link text">
-                                    Популярные
-                                </a>
+                                <select class="sort__select text">
+                                    <option >Популярные</option>
+                                    <option >Популярные</option>
+                                    <option >Популярные</option>
+                                </select>
 
                                 <div class="sort__buttons">
+                                    <span class="visually-hidden">Кнопка сортировки</span>
                                     <button class="sort__button normalize" type="button">
                                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M6 0L11.5 10H0.5" fill="black"/>
                                         </svg>
                                     </button>
     
+                                    <span class="visually-hidden">Кнопка сортировки</span>
+
                                     <button class="sort__button normalize" type="button">
                                         <svg width="12" height="10" viewBox="0 0 12 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M6 10L0.499999 9.61651e-07L11.5 0" fill="black"/>
@@ -399,7 +405,7 @@
                                     <li class="product-card__item normalize">
                                         <a href="#" class="product-card__link-wrapper link ">
                                             <img src="img/jpeg/monopod_amateur.jpg"  width="360" height="380" alt="Любительская
-                                            селфи-палка">
+                                            селфи-палка.">
                                         
                                             <div class="product-card__name">
                                                 <p class="product-card__bold text-bold normalize">
@@ -419,11 +425,12 @@
                                         </div>
                                         
                                     </li>
+                                    
     
                                     <li class="product-card__item normalize">
                                         <a href="#" class="product-card__link-wrapper link">
                                             <img src="img/jpeg/monopod_professional.jpg" width="360" height="380" alt="Профессиональная 
-                                            селфи-палка ">
+                                            селфи-палка. ">
                                         
                                             <div class="product-card__name">
                                                 <p class="product-card__bold text-bold normalize">
@@ -446,7 +453,7 @@
                                     <li class="product-card__item normalize ">
                                         <a href="#" class="product-card__link-wrapper link new">
                                             <img src="img/jpeg/monopod_waterproof.jpg" width="360" height="380" alt="Непотопляемая
-                                            селфи-палка">
+                                            селфи-палка.">
                                         
                                             <div class="product-card__name ">
                                                 <p class="product-card__bold text-bold normalize">
@@ -468,7 +475,7 @@
                                     <li class="product-card__item normalize">
                                         <a href="#" class="product-card__link-wrapper link">
                                             <img src="img/jpeg/monopod_follow_me.jpg" width="360" height="380" alt="Селфи-палка «Следуй
-                                             за мной»">
+                                             за мной».">
                                             <div class="product-card__name">
                                                 <p class="product-card__bold text-bold normalize">
                                                         Селфи-палка «Следуй <br>
@@ -492,7 +499,7 @@
                                 <div class="product-card__pagination pagination">
                                     <button class="pagination__button normalize" type="button">Назад</button>
     
-                                    <ul class="pagination__list normalize">
+                                    <ul class="pagination__list normalize-list">
                                         <li class="pagination__item normalize">
                                             <a href="#" class="pagination__link pagination__active ">1</a>
                                         </li>
@@ -529,9 +536,9 @@
                 
                 <div class="footer__content">
                     <a href="index.html" class="footer__logo logo">
-                        <img src="img/svg/footer__logo.svg" alt="логотип device" width="145" height="36">
+                        <img src="img/svg/footer_logo.svg" alt="логотип device." width="145" height="36">
                     </a>
-                    <ul class="footer__list normalize-list">
+                    <ul class="footer__list normalize-list ">
                         <li class="foter__column foter__column-1 normalize">
                             <p class="footer__text text normalize">
                                 Санкт-Петербург, набережная
@@ -540,10 +547,11 @@
                         </li>
                         <li class="foter__column foter__column-2 normalize">
 
-                            <ul class="footer__menu footer__top normalize">
+                            <ul class="footer__menu footer__top footer__top normalize-list">
                                 <li class="footer__item normalize"><a href="#" class="footer__link link">Доставка</a></li>
                                 <li class="footer__item normalize"><a href="#" class="footer__link link">Гарантия</a></li>
                                 <li class="footer__item normalize"><a href="#" class="footer__link link">Контакты</a></li>
+                                
                             </ul> 
 
                             <ul class="footer__menu footer__bottom normalize-list">
@@ -579,7 +587,7 @@
 
                                 </li>
 
-                                <li>
+                                <li class="normalize">
                                     <a href="https://htmlacademy.ru/" class="footer__academy normalize">
                                         <svg class="logo-academy" width="115" height="33" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <path d="M0 12.9v2.6h2.5v-2.6H0ZM11.6 4.5c-1.6 0-2.8.7-3.6 1.7h-.1V0h-2v15.5h2v-5.3c0-2.1 1.3-3.6 3.3-3.6 1.8 0 2.9 1.4 2.9 3.2v5.7h2V9.4c.1-3-1.8-4.9-4.5-4.9ZM26.6 4.8h-4.8V1.1h-2v3.8h-1.9v2h1.9v6c0 1.7 1 2.7 2.7 2.7h4.1v-2h-3.7c-.7 0-1.1-.4-1.1-1.1V6.8h4.8v-2ZM41.1 4.6c-1.6 0-2.9.8-3.5 2.1h-.1c-.6-1.2-1.8-2.1-3.4-2.1-1.4 0-2.5.8-3.1 1.8h-.1V4.8H29v10.6h2V10c0-2 1-3.5 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2V9.8c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2V8.9c.1-2.5-1.4-4.3-3.9-4.3ZM47.8 12.7c0 1.7 1 2.7 2.8 2.7h2v-2h-1.7c-.7 0-1.1-.4-1.1-1.1V0h-2v12.7ZM28.9 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.4 3.6-3.6 3.6ZM44.2 22c-.5-2.4-2.6-4.1-5.4-4.1a5.4 5.4 0 0 0-5.6 5.6c0 3.1 2.2 5.6 5.6 5.6 2.8 0 4.9-1.8 5.4-4.2h-2.1a3.4 3.4 0 0 1-3.3 2.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6c1.6 0 2.8 1 3.3 2.2h2.1V22ZM55.1 19.7c-.9-1.1-2.2-1.8-3.9-1.8-3.1 0-5.4 2.3-5.4 5.6s2.3 5.6 5.4 5.6c1.8 0 3-.8 3.8-1.9h.1v1.6h2V18.2h-2v1.5Zm-3.6 7.4c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c0 1.9-1.5 3.6-3.6 3.6ZM68.7 19.8c-.9-1.1-2.2-1.9-3.9-1.9-3.1 0-5.4 2.3-5.4 5.6s2.2 5.6 5.4 5.6c1.7 0 3-.8 3.8-1.8h.1v1.5h2V13.4h-2v6.4Zm-3.6 7.3c-2.2 0-3.6-1.6-3.6-3.6s1.4-3.6 3.6-3.6 3.6 1.6 3.6 3.6c-.1 2-1.5 3.6-3.6 3.6ZM78.3 17.9c-3.3 0-5.5 2.5-5.5 5.6 0 3 2.1 5.6 5.5 5.6 2.5 0 4.5-1.3 5.2-3.6h-2.1c-.5 1-1.6 1.6-3 1.6-1.9 0-3.3-1.3-3.4-2.9h8.8c.2-3.6-2-6.3-5.5-6.3Zm0 1.9c1.7 0 3 1 3.3 2.6h-6.5c.3-1.5 1.5-2.6 3.2-2.6ZM98.2 17.9c-1.6 0-2.9.8-3.6 2h-.1c-.6-1.2-1.8-2-3.4-2-1.4 0-2.5.7-3.1 1.8v-1.5h-1.9v10.6h2v-5.4c0-2 1-3.4 2.6-3.5 1.5 0 2.4 1 2.4 2.6v6.3h2v-5.6c0-2.4 1.4-3.3 2.6-3.3 1.5 0 2.4 1 2.4 2.6v6.3h2v-6.5c.1-2.6-1.4-4.4-3.9-4.4ZM109.4 27l-3.6-8.9h-2.2l4.8 11.6c-.3.9-.7 1.2-1.7 1.2h-2.5v2h2.5c1.8 0 2.8-.8 3.5-2.6l4.7-12.2h-2.1l-3.4 8.9Z" />                
